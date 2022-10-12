@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  &-top {
+    max-width: 184rem;
+    margin: auto;
+  }
+  &-call {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    float: left;
+    margin-left: 6%;
+    margin-top: 1.6rem;
+    text-decoration: none;
+    color: $color-grey-dark;
+    @include mq("small-screen-1") {
+      margin-left: 10%;
+    }
+    @include mq("small-screen-2") {
+      margin-left: 15%;
+    }
+    @include mq("small-screen-3") {
+      margin-left: 20%;
+    }
+  }
+  &-logo {
+    display: block;
+    width: 7rem;
+    height: 5rem;
+    background: url(../../images/Omega_Logo.svg.png) no-repeat center top;
+    background-size: 7rem;
+    float: left;
+    margin-left: 40%;
+    @include mq("small-screen-1") {
+      margin-left: 30%;
+    }
+    @include mq("small-screen-2") {
+      margin-left: 20%;
+    }
+    @include mq("small-screen-3") {
+      margin-left: 10%;
+    }
+  }
+  &-btns {
+    height: 5rem;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    &-cm {
+      display: inline-block;
+      text-decoration: none;
+      span {
+        display: block;
+        color: $color-grey-dark;
+      }
+    }
+  }
+}
